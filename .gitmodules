@@ -1,0 +1,3 @@
+[submodule "wireguard-linux-compact"]
+	path = wireguard-linux-compact
+	url = https://git.zx2c4.com/wireguard-linux-compat
