@@ -9,8 +9,8 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 override_dh_auto_install-indep:
 	mkdir -p $(CURDIR)/debian/wireguard-dkms/usr/src
-	cp -a $(CURDIR)/wireguard-linux-compact/src $(CURDIR)/debian/wireguard-dkms/usr/src/wireguard-$(DEB_VERSION_UPSTREAM)/
-	$(MAKE) -C wireguard-linux-compact/src DESTDIR=$(CURDIR)/debian/wireguard-dkms DKMSDIR=/usr/src/wireguard-$(DEB_VERSION_UPSTREAM)/ dkms-install
+	cp -a $(CURDIR)/wireguard-linux-compat/src $(CURDIR)/debian/wireguard-dkms/usr/src/wireguard-$(DEB_VERSION_UPSTREAM)/
+	$(MAKE) -C wireguard-linux-compat/src DESTDIR=$(CURDIR)/debian/wireguard-dkms DKMSDIR=/usr/src/wireguard-$(DEB_VERSION_UPSTREAM)/ dkms-install
 
 override_dh_dkms:
-	dh_dkms -p wireguard-dkms -- wireguard-linux-compact/src/dkms.conf
+	dh_dkms -p wireguard-dkms -- wireguard-linux-compat/src/dkms.conf

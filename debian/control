@@ -1,4 +1,4 @@
-Source: wireguard-linux-compact
+Source: wireguard-linux-compat
 Section: net
 Priority: extra
 Maintainer: WireGuard Ubuntu Packaging Team  <egbert@eggiecode.org>
