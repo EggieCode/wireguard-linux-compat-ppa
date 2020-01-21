@@ -1,3 +1,4 @@
+*.swp
 .pc
 *.debhelper
 *.substvars
@@ -5,17 +6,15 @@ debian/debhelper-build-stamp
 debian/files
 debian/wireguard-dkms/
 debian/wireguard-tools/
-
 cscope.out
+*.debhelper.log
 *.o
 *.d
 *.ko
 *.mod.c
-src/tools/wg
-Module.symvers
 *.cmd
+Module.symvers
 .tmp_versions
-*.swp
 modules.order
 modules.builtin
 maint/
