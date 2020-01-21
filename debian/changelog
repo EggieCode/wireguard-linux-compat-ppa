@@ -1,0 +1,5 @@
+wireguard (v0.0.20200105-wg1~trusty) trusty; urgency=medium
+
+  * Creating of dkms package trusty with snapshot v0.0.20200105
+
+ -- Egbert Verhage <egbert@eggiecode.org>  Tue, 21 Jan 2020 12:09:12 +0100
